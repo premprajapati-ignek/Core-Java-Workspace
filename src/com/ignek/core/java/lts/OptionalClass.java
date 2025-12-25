@@ -1,0 +1,16 @@
+package com.ignek.core.java.lts;
+
+import java.util.Optional;
+
+public class OptionalClass {
+    public static void main(String[] args) {
+        String words[] = new String[10];
+        Optional<String> optionalClass = Optional.ofNullable(words[5]);
+        if (optionalClass.isPresent()){
+            String word = words[5].toUpperCase();
+            System.out.println(word);
+        } else {
+            System.out.println("word is null");
+        }
+    }
+}
